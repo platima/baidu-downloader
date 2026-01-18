@@ -1,3 +1,5 @@
+<img align="right" src="https://visitor-badge.laobi.icu/badge?page_id=platima.baidu-downloader" height="20" />
+
 # Chinese Cloud Storage Direct Download Helper (Unlicensed)
 
 [![License](https://img.shields.io/badge/license-AGPLv3.0-blue.svg)](LICENSE)
