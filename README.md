@@ -9,12 +9,12 @@
 A free and genuinely open source userscript for downloading files from Chinese cloud storage services. No licence codes, no paywalls, no nonsense.
 
 **Supported Services:**
-- ✅ Baidu Netdisk (百度网盘)
-- ✅ Aliyun Drive (阿里云盘)
-- ✅ Tianyi Cloud (天翼云盘)
-- ✅ Xunlei Cloud (迅雷云盘)
-- ✅ Quark Drive (夸克网盘)
-- ✅ China Mobile Cloud (移动云盘)
+- ✅ Baidu Netdisk (百度网盘) _(Done)_
+- ✅ Aliyun Drive (阿里云盘) _(Framework in place)_
+- ✅ Tianyi Cloud (天翼云盘) _(Framework in place)_
+- ✅ Xunlei Cloud (迅雷云盘) _(Framework in place)_
+- ✅ Quark Drive (夸克网盘) _(Framework in place)_
+- ✅ China Mobile Cloud (移动云盘) _(Framework in place)_
 
 ## What This Is
 
