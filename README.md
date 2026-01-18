@@ -1,97 +1,167 @@
-<p align="center">
-  <a href="https://www.youxiaohou.com" title="点击访问">
-    <img width="100" height="100" src="https://www.youxiaohou.com/logo.gif" alt="网盘直链下载助手">
-  </a>
-</p>
+# Chinese Cloud Storage Direct Download Helper (Unlicensed)
 
-<h1 align="center">网盘直链下载助手</h1>
+[![License](https://img.shields.io/badge/license-AGPLv3.0-blue.svg)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-blue.svg)]()
+[![Tampermonkey](https://img.shields.io/badge/TamperMonkey-v4.13+-brightgreen.svg)]()
 
-<p align="center">
-  <img src="https://img.shields.io/badge/TamperMonkey-v4.13-brightgreen.svg?style=flat-square" alt="tampermonkey">
-  <a href="LICENSE">
-    <img src="https://img.shields.io/badge/license-AGPLv3.0-lightgrey.svg?style=flat-square" alt="LICENSE">
-  </a>
-  <img src="https://img.shields.io/badge/Chrome-≥76.0-brightgreen.svg?style=flat-square" alt="chrome">
-  <img src="https://img.shields.io/badge/Edge-≥88.0-brightgreen.svg?style=flat-square" alt="edge">
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20Mac%20%7C%20Linux-blue.svg?style=flat-square" alt="platform">
-</p>
+A free and genuinely open source userscript for downloading files from Chinese cloud storage services. No licence codes, no paywalls, no nonsense.
 
-<div align="center">
-  <h3>
-    <a href="https://www.youxiaohou.com">
-      使用说明
-    </a>
-    <span> | </span>
-    <a href="https://www.youxiaohou.com/install.html">
-      安装地址
-    </a>
-    <span> | </span>
-    <a href="https://www.youxiaohou.com/download.html">
-      相关软件
-    </a>
-    <span> | </span>
-    <a href="https://www.youxiaohou.com/zh-cn/question.html">
-      常见问题
-    </a>
-    <span> | </span>
-    <a href="https://github.com/syhyz1990/baiduyun/issues">
-      提交Bug
-    </a>
-  </h3>
-</div>
+**Supported Services:**
+- ✅ Baidu Netdisk (百度网盘)
+- ✅ Aliyun Drive (阿里云盘)
+- ✅ Tianyi Cloud (天翼云盘)
+- ✅ Xunlei Cloud (迅雷云盘)
+- ✅ Quark Drive (夸克网盘)
+- ✅ China Mobile Cloud (移动云盘)
 
-<div align="center">
-  <strong>👉 一个免费开源的网盘下载助手 👈</strong><br>
-  <sub>适用于 Linux，macOS，Windows 平台</sub>
-</div>
-<br>
+## What This Is
 
-[中文文档](README.md) | [English Docs](README_EN.md)
+This is an unlicensed fork of the [original baiduyun userscript](https://github.com/syhyz1990/baiduyun). The original repository claimed to be "free and open source" but required a licence code to actually use it - which defeats the entire point of being open source.
 
-【网盘直链下载助手】是一款免费开源**获取百度网盘和阿里云盘文件真实下载地址**的油猴脚本，基于 PCSAPI，支持 Windows，Mac，Linux 等多平台，支持 IDM，XDown，Aria2 等多线程下载工具，支持 JSON-RPC 协议远程下载，支持 cURL 命令下载。
+This fork:
+- **Removes all licence validation** - just install and use
+- **Translates everything to English** for international users
+- **Updates regularly** via Tampermonkey's built-in update mechanism
+- **Maintains the AGPL-3.0 licence** as required
 
-**建议配合网盘超级会员使用**
+All credit for the original code goes to [YouXiaoHou](https://github.com/syhyz1990). This fork simply removes the artificial restrictions.
 
-支持下面六大网盘：`百度网盘`, `阿里云盘`, `天翼云盘`, `迅雷云盘`, `夸克网盘`, `移动云盘`
+## Installation
 
-## 📖 使用教程
+1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey/Greasemonkey)
+2. Click here to install: **[baidu-downloader.user.js](https://github.com/platima/baidu-downloader/raw/main/baidu-downloader.user.js)**
+3. Navigate to any supported cloud storage site
+4. Click the "Download Helper" button that appears
 
-- **[Windows平台使用教程](https://www.youxiaohou.com/zh-cn/windows/)**
+That's it. No licence codes, no registration, no bullshit.
 
-- **[MacOS平台使用教程](https://www.youxiaohou.com/zh-cn/mac/)**
+## Features
 
-- **[Linux平台使用教程](https://www.youxiaohou.com/zh-cn/linux/)**
+- **Multiple Download Methods:**
+  - Direct API download (triggers IDM if installed)
+  - Aria2 RPC integration
+  - cURL commands for terminal use
+  - BitComet protocol links
+  
+- **RPC Downloader Support:**
+  - Motrix
+  - Aria2
+  - aria2c
+  - Any JSON-RPC compatible downloader
 
-## 🔧 插件功能
+- **Platform Support:**
+  - Windows (CMD, PowerShell)
+  - macOS (Terminal)
+  - Linux (Bash, Shell)
 
-- ✅ 支持多种网盘：`百度网盘`, `阿里云盘`, `天翼云盘`, `迅雷云盘`, `夸克网盘`, `移动云盘`
-- ✅ 支持多种操作系统：Windows，Linux，Mac
-- ✅ 支持多种下载协议：HTTP，JSON-RPC，cURL
-- ✅ 支持多种下载器：IDM，XDown，Aria2，NDM，Motrix，终端
-- ✅ 支持批量获取百度网盘和阿里云盘的文件下载链接
-- ✅ 可以通过 JSON-RPC 协议发送下载链接至本地或远程下载
-- ✅ 支持更换皮肤，自动更新，新版网盘界面
+- **Customisation:**
+  - Theme colours
+  - Download paths
+  - RPC configuration
+  - Terminal type selection
 
-## 💽 安装助手
+## Download Methods Explained
 
-请确保已先安装 [Tampermonkey](https://www.crxsoso.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo) 脚本管理器
+### API Download
+Downloads directly through your browser. Will attempt to trigger IDM if you have it installed, otherwise falls back to browser's native download.
 
-- **[安装地址（推荐）](https://www.youxiaohou.com/install.html)**
+**Best for:** Single files, quick downloads, IDM users
 
-## 🎨 助手界面
+### Aria2 Download
+Generates aria2c command-line instructions you can paste into your terminal or Aria2 GUI.
 
-|  百度网盘 |  阿里云盘 |
-|:---:|:---:|
-| ![](https://pic.rmb.bdstatic.com/bjh/32b2bead4b1c7fc806eacfde29b78f975055.gif)  | ![](https://pic.rmb.bdstatic.com/bjh/5511a57ed37398ab870ab0095b78948a6031.gif)  |
+**Best for:** Power users, batch downloads, resumable downloads
 
-| 天翼云盘 | 迅雷云盘 |
-|:---:|:---:|
-| ![](https://pic.rmb.bdstatic.com/bjh/e95e1fd01ceb3df999c4b088a1edb7f18839.gif)  | ![](https://pic.rmb.bdstatic.com/bjh/1b7300f5a8d7f6bcea3da07fd2abf1654434.gif)  |
+### RPC Download
+Sends download links directly to your configured RPC downloader (Motrix, Aria2, etc.).
 
-| 夸克网盘 | 移动云盘 |
-|:---:|:---:|
-| ![](https://pic.rmb.bdstatic.com/bjh/938883c3ddf5421d580199b60b1546733824.gif)  | ![](https://pic.rmb.bdstatic.com/bjh/d493cddb5a1cdc3dbe5369304bfa2353763.gif)  |
+**Best for:** Automated downloading, running downloaders on different machines
 
-## 📝 更新日志
+### cURL Download
+Generates cURL commands for downloading via command line.
 
-- [点击查看](https://www.youxiaohou.com/install.html#%F0%9F%93%9D-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97)
+**Best for:** Servers, automation scripts, Linux users
+
+### BC Download
+Creates BitComet protocol links.
+
+**Best for:** BitComet users who want magnet-link style downloading
+
+## Configuration
+
+Click the "Settings" menu item in the download helper dropdown to configure:
+
+- **RPC Settings:** Host, port, path, authentication token
+- **Download Path:** Where files should be saved
+- **Terminal Type:** Match your operating system's terminal
+- **Theme Colour:** Customise the interface appearance
+
+## Known Limitations
+
+- Folders cannot be downloaded directly - select files inside them
+- Some cloud services have rate limits
+- Large batches may need to be split into multiple downloads
+- Requires you to be logged into the cloud storage service
+
+## Troubleshooting
+
+### "BDUSS cookie not found"
+You need to log in to Baidu Netdisk first. The script reads your authentication cookie from the browser.
+
+### "Failed to get download links"
+The page may have expired. Try refreshing and selecting files again.
+
+### "RPC send failed"
+Check your RPC settings in the configuration menu. Make sure your RPC downloader (Motrix/Aria2) is running and accessible.
+
+### IDM not triggering
+Go to IDM → Options → File Types and ensure the file extension is listed. Some cloud services use non-standard extensions.
+
+## For Developers
+
+This is a userscript (Greasemonkey-style), not a browser extension. It runs via Tampermonkey/Violentmonkey/Greasemonkey.
+
+**Key files:**
+- `baidu-downloader.user.js` - Main userscript
+- Updates pulled automatically from GitHub via Tampermonkey
+
+**To modify:**
+1. Edit `baidu-downloader.user.js`
+2. Increment version number in metadata
+3. Tampermonkey will auto-update for users who installed via GitHub
+
+## Why This Fork Exists
+
+The original project claimed to be "free and open source" under AGPL-3.0, but required users to obtain licence codes before the script would actually function. This defeats the entire purpose of open source software.
+
+This fork honours the original AGPL-3.0 licence by:
+- Keeping the code open and auditable
+- Removing artificial usage restrictions
+- Maintaining attribution to the original author
+- Allowing anyone to use, modify, and distribute freely
+
+If you support genuinely free and open source software, please star this repository and share it with others who might benefit.
+
+## Licence
+
+AGPL-3.0 - see [LICENSE](LICENSE)
+
+Original code by YouXiaoHou. Unlicensed fork maintained by [Platima](https://github.com/platima).
+
+## Contributing
+
+Pull requests welcome! Please maintain the existing code style and ensure all text is in English (Australian preferred 😉).
+
+**Particularly appreciated:**
+- Bug fixes
+- Support for additional cloud storage services
+- UI/UX improvements
+- Documentation improvements
+
+## Disclaimer
+
+This tool is for personal use only. Respect copyright laws and terms of service of the cloud storage providers. The maintainers of this project are not responsible for how you use it.
+
+---
+
+**Note:** If you want the original, licence-encumbered version, it's at [syhyz1990/baiduyun](https://github.com/syhyz1990/baiduyun). But why would you?
