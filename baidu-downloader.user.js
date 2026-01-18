@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name              Chinese Cloud Storage Direct Download Helper (Unlicensed)
 // @namespace         https://github.com/platima/baidu-downloader
-// @version           6.2.7-platima.1
+// @version           6.2.7-platima.2
 // @author            YouXiaoHou (Modified by Platima)
 // @description       Download assistant for Baidu Netdisk, Aliyun Drive, Tianyi Cloud, Xunlei Cloud, Quark Drive, and China Mobile Cloud. Works with IDM, Aria2, cURL, and other download managers. No licence required.
 // @license           AGPL-3.0-or-later
 // @homepage          https://github.com/platima/baidu-downloader
 // @supportURL        https://github.com/platima/baidu-downloader/issues
-// @updateURL         https://raw.githubusercontent.com/platima/baidu-downloader/main/baidu-downloader.user.js
-// @downloadURL       https://raw.githubusercontent.com/platima/baidu-downloader/main/baidu-downloader.user.js
+// @updateURL         https://raw.githubusercontent.com/platima/baidu-downloader/master/baidu-downloader.user.js
+// @downloadURL       https://raw.githubusercontent.com/platima/baidu-downloader/master/baidu-downloader.user.js
 // @match             *://pan.baidu.com/disk/home*
 // @match             *://yun.baidu.com/disk/home*
 // @match             *://pan.baidu.com/disk/main*

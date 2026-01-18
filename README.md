@@ -31,7 +31,7 @@ All credit for the original code goes to [YouXiaoHou](https://github.com/syhyz19
 ## Installation
 
 1. Install [Tampermonkey](https://www.tampermonkey.net/) (or Violentmonkey/Greasemonkey)
-2. Click here to install: **[baidu-downloader.user.js](https://github.com/platima/baidu-downloader/raw/main/baidu-downloader.user.js)**
+2. Click here to install: **[baidu-downloader.user.js](https://github.com/platima/baidu-downloader/raw/master/baidu-downloader.user.js)**
 3. Navigate to any supported cloud storage site
 4. Click the "Download Helper" button that appears
 
